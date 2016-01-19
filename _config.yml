@@ -7,11 +7,11 @@ exclude:
   - "/vendor/"
 
 # Site settings
-title: Neat Whiskey
-subtitle: A base theme built on Bourbon and Neat
-email: neil@eyedivision.com
+title: Neil C Smith
+subtitle: Artist & Technologist
+email: neil@neilcsmith.net
 name: Neil C Smith
-description: A base theme built on Bourbon and Neat
+description: Neil C Smith - Artist & Technologist
 # Base URL of site (i.e. /blog). It should always start with a slash,
 # and never end with a slash. Set it to a blank value if hosting at the
 # root of your server.
@@ -22,16 +22,13 @@ logo: "/assets/logo.png"
 
 # Build settings
 markdown: kramdown
-paginate: 5
-paginate_path: "/page:num/"
-inter_post_navigation: false
 permalink: pretty
 
 # Collections Example
 collections:
-    things:
+    projects:
         output: true
-        permalink: /things/:path/
+        permalink: /projects/:path/
 
 
 # Defaults Example
@@ -39,7 +36,7 @@ defaults:
     -
         scope:
             path: ""
-            type: "things"
+            type: "projects"
         values:
             layout: "page"
             
@@ -68,16 +65,16 @@ defaults:
 social:
   - name: Twitter
     icon: twitter
-    username: EyeDivision
-    url: https://twitter.com/EyeDivision
-    desc: Follow us on Twitter
+    username: neilcsmith_net
+    url: https://twitter.com/neilcsmith_net
+    desc: Follow me on Twitter
     share: true
 
   - name: Facebook
     icon: facebook
-    username: eyedivision
-    url: 
-    desc: Like us on Facebook
+    username: neilcsmith.net
+    url: https://www.facebook.com/neilcsmith.net
+    desc: Contact me on Facebook
     share: true
 
   - name: GitHub

@@ -1,0 +1,22 @@
+---
+layout: page
+title: "Projects"
+permalink: /projects/
+---
+
+<ul class="posts-list">
+  {% assign projects = site.projects | sort: 'date' %}  
+  {% for project in projects %}
+    <li>
+      <strong>
+        <a href="{{ project.url | prepend: site.baseurl }}">{{ project.title }}</a>
+      </strong>
+      {% if project.date %}
+        <span class="post-date">- {{ project.date | date: '%B %Y' }}</span>
+      {% endif %}
+      {% if project.description %}
+        <br><span class="post-description">{{ project.description }}</span>
+      {% endif %}
+    </li>
+  {% endfor %}
+</ul>
